@@ -40,7 +40,7 @@
                                                     <constraint firstAttribute="width" secondItem="9e4-Co-Z9p" secondAttribute="height" multiplier="1:1" id="E2J-PD-Ect"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-j3-3Z1">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-j3-3Z1">
                                                 <rect key="frame" x="140.5" y="0.0" width="126.5" height="126.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -49,17 +49,36 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE2-tU-mRe">
+                                        <rect key="frame" x="57.5" y="57.5" width="40" height="40"/>
+                                        <state key="normal" image="Plus copie"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-GQ-fjX">
+                                        <rect key="frame" x="198" y="58" width="40" height="40"/>
+                                        <state key="normal" image="Plus copie"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPi-9q-BVw">
+                                        <rect key="frame" x="128" y="198" width="40" height="40"/>
+                                        <state key="normal" image="Plus copie"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0091547677290000004" green="0.39835548399999998" blue="0.59624022249999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="4lE-Zx-VEi" firstAttribute="centerX" secondItem="ls4-tE-DUq" secondAttribute="centerX" id="52g-9A-kUJ"/>
+                                    <constraint firstItem="lPi-9q-BVw" firstAttribute="centerY" secondItem="4lE-Zx-VEi" secondAttribute="centerY" id="5O8-KT-87F"/>
                                     <constraint firstItem="gGK-EK-67x" firstAttribute="top" secondItem="ls4-tE-DUq" secondAttribute="top" constant="14" id="68F-ao-wVC"/>
+                                    <constraint firstItem="DIw-GQ-fjX" firstAttribute="centerX" secondItem="mL2-j3-3Z1" secondAttribute="centerX" id="8Ul-5P-Ezl"/>
                                     <constraint firstAttribute="bottom" secondItem="4lE-Zx-VEi" secondAttribute="bottom" constant="14" id="CvL-yJ-NdU"/>
                                     <constraint firstAttribute="trailing" secondItem="gGK-EK-67x" secondAttribute="trailing" constant="14" id="DX1-cJ-Q4D"/>
                                     <constraint firstItem="gGK-EK-67x" firstAttribute="centerX" secondItem="ls4-tE-DUq" secondAttribute="centerX" id="HpA-Bd-ctX"/>
                                     <constraint firstItem="4lE-Zx-VEi" firstAttribute="leading" secondItem="ls4-tE-DUq" secondAttribute="leading" constant="14" id="KLN-W1-SIw"/>
+                                    <constraint firstItem="lPi-9q-BVw" firstAttribute="centerX" secondItem="4lE-Zx-VEi" secondAttribute="centerX" id="S7H-oy-uxY"/>
                                     <constraint firstItem="4lE-Zx-VEi" firstAttribute="top" secondItem="gGK-EK-67x" secondAttribute="bottom" constant="14" id="fRB-Xs-x9s"/>
                                     <constraint firstAttribute="width" secondItem="ls4-tE-DUq" secondAttribute="height" multiplier="1:1" id="g08-64-tcf"/>
+                                    <constraint firstItem="nE2-tU-mRe" firstAttribute="centerX" secondItem="9e4-Co-Z9p" secondAttribute="centerX" id="pMa-0B-9ok"/>
                                     <constraint firstAttribute="trailing" secondItem="4lE-Zx-VEi" secondAttribute="trailing" constant="14" id="rb2-mm-YhZ"/>
+                                    <constraint firstItem="nE2-tU-mRe" firstAttribute="centerY" secondItem="9e4-Co-Z9p" secondAttribute="centerY" id="uxm-JC-96V"/>
+                                    <constraint firstItem="DIw-GQ-fjX" firstAttribute="centerY" secondItem="mL2-j3-3Z1" secondAttribute="centerY" id="zFY-2N-kt4"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-li-BnH">
@@ -107,31 +126,14 @@
                                 </subviews>
                                 <variation key="heightClass=compact" axis="vertical"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-4h-V9D">
-                                <rect key="frame" x="167.5" y="384" width="40" height="40"/>
-                                <state key="normal" image="Plus copie"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAi-vb-dXH">
-                                <rect key="frame" x="238" y="243.5" width="40" height="40"/>
-                                <state key="normal" image="Plus copie"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-4D-dsI">
-                                <rect key="frame" x="97.5" y="243.5" width="40" height="40"/>
-                                <state key="normal" image="Plus copie"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.713172853" green="0.84272891279999995" blue="0.8980957866" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OG4-QQ-r6E" firstAttribute="centerY" secondItem="ls4-tE-DUq" secondAttribute="centerY" id="0b6-Rq-0Vu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ls4-tE-DUq" secondAttribute="bottom" constant="20" id="3eA-Ew-6oo"/>
-                            <constraint firstItem="p6d-4D-dsI" firstAttribute="centerX" secondItem="9e4-Co-Z9p" secondAttribute="centerX" id="6ql-VI-TNX"/>
                             <constraint firstItem="2ay-li-BnH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="7iW-N0-dPD"/>
-                            <constraint firstItem="KUG-4h-V9D" firstAttribute="centerY" secondItem="4lE-Zx-VEi" secondAttribute="centerY" id="9bd-gu-pqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ls4-tE-DUq" secondAttribute="trailing" constant="40" id="Ere-u3-t4s"/>
-                            <constraint firstItem="KUG-4h-V9D" firstAttribute="centerX" secondItem="4lE-Zx-VEi" secondAttribute="centerX" id="HEE-Bm-ZAv"/>
-                            <constraint firstItem="p6d-4D-dsI" firstAttribute="centerY" secondItem="9e4-Co-Z9p" secondAttribute="centerY" id="JtR-7n-plN"/>
-                            <constraint firstItem="dAi-vb-dXH" firstAttribute="centerX" secondItem="mL2-j3-3Z1" secondAttribute="centerX" id="LkN-cH-D9X"/>
                             <constraint firstItem="2ay-li-BnH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T6m-kD-n7e"/>
                             <constraint firstItem="ls4-tE-DUq" firstAttribute="centerX" secondItem="CHU-CE-fNu" secondAttribute="centerX" id="UZf-Ar-ztP"/>
                             <constraint firstItem="OG4-QQ-r6E" firstAttribute="centerX" secondItem="ls4-tE-DUq" secondAttribute="centerX" id="Uws-Ep-0pe"/>
@@ -144,7 +146,6 @@
                             <constraint firstItem="ls4-tE-DUq" firstAttribute="top" secondItem="CHU-CE-fNu" secondAttribute="bottom" constant="10" id="lO9-Ox-2dD"/>
                             <constraint firstItem="ls4-tE-DUq" firstAttribute="leading" secondItem="CHU-CE-fNu" secondAttribute="trailing" constant="10" id="qNq-gX-V2N"/>
                             <constraint firstItem="ls4-tE-DUq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vmJ-gU-LCy"/>
-                            <constraint firstItem="dAi-vb-dXH" firstAttribute="centerY" secondItem="mL2-j3-3Z1" secondAttribute="centerY" id="y4h-ir-7WI"/>
                             <constraint firstItem="OG4-QQ-r6E" firstAttribute="leading" secondItem="ls4-tE-DUq" secondAttribute="trailing" constant="40" id="ydH-e5-UiJ"/>
                             <constraint firstItem="ls4-tE-DUq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ztz-aG-VRI"/>
                         </constraints>
@@ -176,7 +177,7 @@
                                 <include reference="vmJ-gU-LCy"/>
                                 <exclude reference="ztz-aG-VRI"/>
                                 <include reference="0b6-Rq-0Vu"/>
-                                <include reference="Uws-Ep-0pe"/>
+                                <exclude reference="Uws-Ep-0pe"/>
                                 <exclude reference="Vgh-Bj-3DZ"/>
                                 <exclude reference="fmM-19-nhU"/>
                                 <include reference="ydH-e5-UiJ"/>
