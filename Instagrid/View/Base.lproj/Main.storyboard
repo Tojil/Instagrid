@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Delm-Medium.otf">
-            <string>Delm-Medium</string>
-        </array>
         <array key="ThirstySoftRegular.otf">
             <string>ThirstySoftRegular</string>
         </array>
@@ -20,108 +17,126 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ls4-tE-DUq">
-                                <rect key="frame" x="40" y="186" width="295" height="295"/>
+                                <rect key="frame" x="40" y="258.66666666666669" width="295" height="295.00000000000006"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4lE-Zx-VEi">
-                                        <rect key="frame" x="14" y="154.5" width="267" height="126.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gGK-EK-67x">
-                                        <rect key="frame" x="14" y="14" width="267" height="126.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4YY-hJ-eRE">
+                                        <rect key="frame" x="15" y="15" width="265" height="265"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9e4-Co-Z9p">
-                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="126.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9e4-Co-Z9p" secondAttribute="height" multiplier="1:1" id="E2J-PD-Ect"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mL2-j3-3Z1">
-                                                <rect key="frame" x="140.5" y="0.0" width="126.5" height="126.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="mL2-j3-3Z1" secondAttribute="height" multiplier="1:1" id="R7C-Ew-9c2"/>
-                                                </constraints>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="noE-kh-BmT">
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="125"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cw-ea-h1v">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="Plus copie"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40z-C4-eK0">
+                                                        <rect key="frame" x="140" y="0.0" width="125" height="125"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="Plus copie"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fhu-fO-FNT">
+                                                <rect key="frame" x="0.0" y="140" width="265" height="125"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocw-AF-YDr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="265" height="125"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="Plus copie"/>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bO-Qt-YXY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="125"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="Plus copie"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nE2-tU-mRe">
-                                        <rect key="frame" x="57.5" y="57.5" width="40" height="40"/>
-                                        <state key="normal" image="Plus copie"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIw-GQ-fjX">
-                                        <rect key="frame" x="198" y="58" width="40" height="40"/>
-                                        <state key="normal" image="Plus copie"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPi-9q-BVw">
-                                        <rect key="frame" x="128" y="198" width="40" height="40"/>
-                                        <state key="normal" image="Plus copie"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0091547677290000004" green="0.39835548399999998" blue="0.59624022249999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="4lE-Zx-VEi" firstAttribute="centerX" secondItem="ls4-tE-DUq" secondAttribute="centerX" id="52g-9A-kUJ"/>
-                                    <constraint firstItem="lPi-9q-BVw" firstAttribute="centerY" secondItem="4lE-Zx-VEi" secondAttribute="centerY" id="5O8-KT-87F"/>
-                                    <constraint firstItem="gGK-EK-67x" firstAttribute="top" secondItem="ls4-tE-DUq" secondAttribute="top" constant="14" id="68F-ao-wVC"/>
-                                    <constraint firstItem="DIw-GQ-fjX" firstAttribute="centerX" secondItem="mL2-j3-3Z1" secondAttribute="centerX" id="8Ul-5P-Ezl"/>
-                                    <constraint firstAttribute="bottom" secondItem="4lE-Zx-VEi" secondAttribute="bottom" constant="14" id="CvL-yJ-NdU"/>
-                                    <constraint firstAttribute="trailing" secondItem="gGK-EK-67x" secondAttribute="trailing" constant="14" id="DX1-cJ-Q4D"/>
-                                    <constraint firstItem="gGK-EK-67x" firstAttribute="centerX" secondItem="ls4-tE-DUq" secondAttribute="centerX" id="HpA-Bd-ctX"/>
-                                    <constraint firstItem="4lE-Zx-VEi" firstAttribute="leading" secondItem="ls4-tE-DUq" secondAttribute="leading" constant="14" id="KLN-W1-SIw"/>
-                                    <constraint firstItem="lPi-9q-BVw" firstAttribute="centerX" secondItem="4lE-Zx-VEi" secondAttribute="centerX" id="S7H-oy-uxY"/>
-                                    <constraint firstItem="4lE-Zx-VEi" firstAttribute="top" secondItem="gGK-EK-67x" secondAttribute="bottom" constant="14" id="fRB-Xs-x9s"/>
+                                    <constraint firstItem="4YY-hJ-eRE" firstAttribute="leading" secondItem="ls4-tE-DUq" secondAttribute="leading" constant="15" id="3yn-Ay-Pw4"/>
+                                    <constraint firstAttribute="bottom" secondItem="4YY-hJ-eRE" secondAttribute="bottom" constant="15" id="LUI-D6-00J"/>
+                                    <constraint firstAttribute="trailing" secondItem="4YY-hJ-eRE" secondAttribute="trailing" constant="15" id="Pm2-iQ-03p"/>
                                     <constraint firstAttribute="width" secondItem="ls4-tE-DUq" secondAttribute="height" multiplier="1:1" id="g08-64-tcf"/>
-                                    <constraint firstItem="nE2-tU-mRe" firstAttribute="centerX" secondItem="9e4-Co-Z9p" secondAttribute="centerX" id="pMa-0B-9ok"/>
-                                    <constraint firstAttribute="trailing" secondItem="4lE-Zx-VEi" secondAttribute="trailing" constant="14" id="rb2-mm-YhZ"/>
-                                    <constraint firstItem="nE2-tU-mRe" firstAttribute="centerY" secondItem="9e4-Co-Z9p" secondAttribute="centerY" id="uxm-JC-96V"/>
-                                    <constraint firstItem="DIw-GQ-fjX" firstAttribute="centerY" secondItem="mL2-j3-3Z1" secondAttribute="centerY" id="zFY-2N-kt4"/>
+                                    <constraint firstItem="4YY-hJ-eRE" firstAttribute="top" secondItem="ls4-tE-DUq" secondAttribute="top" constant="15" id="tNU-mu-oq9"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-li-BnH">
-                                <rect key="frame" x="140" y="5" width="95" height="31.5"/>
+                                <rect key="frame" x="140" y="49.000000000000007" width="95" height="31.333333333333336"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CHU-CE-fNu">
-                                <rect key="frame" x="111.5" y="125" width="152" height="51"/>
+                                <rect key="frame" x="111.66666666666669" y="198" width="152" height="50.666666666666657"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-fw-f8w">
-                                        <rect key="frame" x="68.5" y="0.0" width="15" height="15"/>
+                                        <rect key="frame" x="68.333333333333329" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="3bQ-MS-heU"/>
                                             <constraint firstAttribute="width" constant="15" id="xjG-7b-hVw"/>
                                         </constraints>
                                         <variation key="heightClass=compact" image="Arrow Left"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-ou-Lb7">
-                                        <rect key="frame" x="0.0" y="23" width="152" height="28"/>
-                                        <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-ou-Lb7">
+                                        <rect key="frame" x="0.0" y="23" width="152" height="27.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="swipe up to share">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="25" name="Delm-Medium"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <attributedString key="attributedText">
+                                                <fragment content="swipe left to share">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="25" name="Delm-Medium"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </variation>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="OG4-QQ-r6E">
-                                <rect key="frame" x="56.5" y="521" width="262" height="80"/>
+                                <rect key="frame" x="56.666666666666629" y="593.66666666666652" width="262" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-gg-LsM">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                        <state key="normal" image="Selected copie" backgroundImage="Layout 1 copie">
+                                        <state key="normal" backgroundImage="Layout 1 copie">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                         </state>
+                                        <state key="selected" image="Selected copie"/>
+                                        <connections>
+                                            <action selector="layoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5e-7g-H2H"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2s-aa-Gjk">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2s-aa-Gjk">
                                         <rect key="frame" x="91" y="0.0" width="80" height="80"/>
-                                        <state key="normal" image="Selected copie" backgroundImage="Layout 2 copie"/>
+                                        <state key="normal" backgroundImage="Layout 2 copie"/>
+                                        <state key="selected" image="Selected copie"/>
+                                        <connections>
+                                            <action selector="layoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRa-nA-q9W"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhY-H2-G7o">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhY-H2-G7o">
                                         <rect key="frame" x="182" y="0.0" width="80" height="80"/>
-                                        <state key="normal" image="Selected copie" backgroundImage="Layout 3 copie"/>
+                                        <state key="normal" backgroundImage="Layout 3 copie"/>
+                                        <state key="selected" image="Selected copie"/>
+                                        <connections>
+                                            <action selector="layoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6H-ds-fxF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact" axis="vertical"/>
@@ -184,15 +199,22 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomRightGridButton" destination="4bO-Qt-YXY" id="FnS-qj-aNQ"/>
+                        <outlet property="topRightGridButton" destination="40z-C4-eK0" id="veE-Q5-Uqe"/>
+                        <outletCollection property="layoutButtons" destination="hLN-gg-LsM" collectionClass="NSMutableArray" id="0c4-Ol-mMS"/>
+                        <outletCollection property="layoutButtons" destination="a2s-aa-Gjk" collectionClass="NSMutableArray" id="JYm-4C-rpf"/>
+                        <outletCollection property="layoutButtons" destination="LhY-H2-G7o" collectionClass="NSMutableArray" id="UlG-kz-5BE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="134.48275862068968"/>
+            <point key="canvasLocation" x="12" y="43.596059113300491"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Arrow Left" width="3.5" height="4.5"/>
-        <image name="Arrow Up" width="4.5" height="3.5"/>
+        <image name="Arrow Left" width="3.3333332538604736" height="4.6666665077209473"/>
+        <image name="Arrow Up" width="4.6666665077209473" height="3.3333332538604736"/>
         <image name="Layout 1 copie" width="80" height="80"/>
         <image name="Layout 2 copie" width="80" height="80"/>
         <image name="Layout 3 copie" width="80" height="80"/>
