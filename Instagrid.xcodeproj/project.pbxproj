@@ -15,6 +15,7 @@
 		1A622B3F23E0535B005C41CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A622B3D23E0535B005C41CB /* LaunchScreen.storyboard */; };
 		1A622B4823E056DA005C41CB /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A622B4623E056DA005C41CB /* Delm-Medium.otf */; };
 		1A622B4923E056DA005C41CB /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A622B4723E056DA005C41CB /* ThirstySoftRegular.otf */; };
+		1A91099C2410F1BC006C3F2D /* UIView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91099B2410F1BC006C3F2D /* UIView+Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1A622B4023E0535B005C41CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A622B4623E056DA005C41CB /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Delm-Medium.otf"; path = "Instagrid/Supporting Files/Delm-Medium.otf"; sourceTree = SOURCE_ROOT; };
 		1A622B4723E056DA005C41CB /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ThirstySoftRegular.otf; path = "Instagrid/Supporting Files/ThirstySoftRegular.otf"; sourceTree = SOURCE_ROOT; };
+		1A91099B2410F1BC006C3F2D /* UIView+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				1A622B4723E056DA005C41CB /* ThirstySoftRegular.otf */,
 				1A622B3B23E0535B005C41CB /* Assets.xcassets */,
 				1A622B3D23E0535B005C41CB /* LaunchScreen.storyboard */,
+				1A91099B2410F1BC006C3F2D /* UIView+Image.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A91099C2410F1BC006C3F2D /* UIView+Image.swift in Sources */,
 				1A622B3723E05357005C41CB /* ViewController.swift in Sources */,
 				1A622B3323E05357005C41CB /* AppDelegate.swift in Sources */,
 				1A622B3523E05357005C41CB /* SceneDelegate.swift in Sources */,

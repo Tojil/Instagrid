@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,20 +16,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ls4-tE-DUq">
-                                <rect key="frame" x="40" y="281" width="334" height="334"/>
+                                <rect key="frame" x="40" y="40" width="520" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4YY-hJ-eRE">
-                                        <rect key="frame" x="15" y="15" width="304" height="304"/>
+                                        <rect key="frame" x="15" y="15" width="490" height="490"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="noE-kh-BmT">
-                                                <rect key="frame" x="0.0" y="0.0" width="304" height="144.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="490" height="237.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cw-ea-h1v">
-                                                        <rect key="frame" x="0.0" y="0.0" width="144.66666666666666" height="144.66666666666666"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="237.5" height="237.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus copie"/>
                                                         <connections>
@@ -38,7 +37,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40z-C4-eK0">
-                                                        <rect key="frame" x="159.66666666666663" y="0.0" width="144.33333333333337" height="144.66666666666666"/>
+                                                        <rect key="frame" x="252.5" y="0.0" width="237.5" height="237.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus copie"/>
                                                         <connections>
@@ -48,10 +47,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fhu-fO-FNT">
-                                                <rect key="frame" x="0.0" y="159.66666666666669" width="304" height="144.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="252.5" width="490" height="237.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocw-AF-YDr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="144.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="490" height="237.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus copie"/>
                                                         <connections>
@@ -59,7 +58,7 @@
                                                         </connections>
                                                     </button>
                                                     <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bO-Qt-YXY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="144.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="237.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" image="Plus copie"/>
                                                         <connections>
@@ -81,16 +80,16 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-li-BnH">
-                                <rect key="frame" x="159.66666666666666" y="49.000000000000007" width="95" height="31.333333333333336"/>
+                                <rect key="frame" x="253.5" y="5" width="93.5" height="28"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CHU-CE-fNu">
-                                <rect key="frame" x="131" y="220.33333333333334" width="152" height="50.666666666666657"/>
+                                <rect key="frame" x="201" y="-22.5" width="198.5" height="52.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="dBZ-fw-f8w">
-                                        <rect key="frame" x="68.666666666666657" y="0.0" width="15" height="15"/>
+                                        <rect key="frame" x="91.5" y="0.0" width="15" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="3bQ-MS-heU"/>
                                             <constraint firstAttribute="width" constant="15" id="xjG-7b-hVw"/>
@@ -98,7 +97,7 @@
                                         <variation key="heightClass=compact" image="Arrow Left"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-ou-Lb7">
-                                        <rect key="frame" x="0.0" y="23" width="152" height="27.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="23" width="198.5" height="29.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="swipe up to share">
                                                 <attributes>
@@ -122,10 +121,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="OG4-QQ-r6E">
-                                <rect key="frame" x="76" y="655" width="262" height="80"/>
+                                <rect key="frame" x="49" y="600" width="502" height="160"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-gg-LsM">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
                                         <state key="normal" backgroundImage="Layout 1 copie">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                         </state>
@@ -135,7 +134,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2s-aa-Gjk">
-                                        <rect key="frame" x="91" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="171" y="0.0" width="160" height="160"/>
                                         <state key="normal" backgroundImage="Layout 2 copie"/>
                                         <state key="selected" image="Selected copie"/>
                                         <connections>
@@ -143,7 +142,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhY-H2-G7o">
-                                        <rect key="frame" x="182" y="0.0" width="80" height="80"/>
+                                        <rect key="frame" x="342" y="0.0" width="160" height="160"/>
                                         <state key="normal" backgroundImage="Layout 3 copie"/>
                                         <state key="selected" image="Selected copie"/>
                                         <connections>
@@ -213,7 +212,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomRightGridButton" destination="4bO-Qt-YXY" id="FnS-qj-aNQ"/>
-                        <outlet property="gridCentral" destination="ls4-tE-DUq" id="21z-Vp-Qdi"/>
+                        <outlet property="gridCentralView" destination="ls4-tE-DUq" id="21z-Vp-Qdi"/>
                         <outlet property="topRightGridButton" destination="40z-C4-eK0" id="veE-Q5-Uqe"/>
                         <outletCollection property="layoutButtons" destination="hLN-gg-LsM" collectionClass="NSMutableArray" id="0c4-Ol-mMS"/>
                         <outletCollection property="layoutButtons" destination="a2s-aa-Gjk" collectionClass="NSMutableArray" id="JYm-4C-rpf"/>

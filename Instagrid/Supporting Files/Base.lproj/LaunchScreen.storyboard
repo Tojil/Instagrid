@@ -15,13 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-f8-udC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-f8-udC">
                                 <rect key="frame" x="177" y="418" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.57416772839999997" green="0.74051553010000004" blue="0.83146113160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9lf-f8-udC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9jN-JJ-YW3"/>
+                            <constraint firstItem="9lf-f8-udC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="VS2-XR-eLW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var topRightGridButton: UIButton!
     @IBOutlet weak var bottomRightGridButton: UIButton!
     @IBOutlet var gridButtons: [UIButton]!
-    @IBOutlet weak var gridCentral: UIView!
+    @IBOutlet weak var gridCentralView: UIView!
     
     
     let imagePickerController = UIImagePickerController()
@@ -23,24 +23,32 @@ class ViewController: UIViewController {
     var screenHeight = UIScreen.main.bounds.height
     var swipeGesture: UISwipeGestureRecognizer?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePickerController.delegate = self
         swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(dragGridCentral(swipe:)))
-        
         guard let swipeGesture = swipeGesture else{return}
-        //swipeGesture.direction = .up
-        gridCentral.addGestureRecognizer(swipeGesture)
+        gridCentralView.addGestureRecognizer(swipeGesture)
         NotificationCenter.default.addObserver(self, selector: #selector(handleSwipeDirection), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
-
     
-    @objc private func dragGridCentral(swipe: UISwipeGestureRecognizer) {
+    @objc func dragGridCentral(swipe: UISwipeGestureRecognizer) {
         if swipe.direction == .up {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.gridCentralView.transform = CGAffineTransform(translationX: 0, y: -self.screenHeight)
+            })
+            
             print("je swipe vers le haut")
         }else {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.gridCentralView.transform = CGAffineTransform(translationX: -self.screenWidth, y: 0)
+            })
+            
             print("je swipe vers la gauche")
         }
+        shareSwipeView()
     }
     
     // si le telephone est en portrait on change la direction du swipe pour le mettre en point up haut
@@ -54,38 +62,19 @@ class ViewController: UIViewController {
             swipeGesture?.direction = .up
            
         }
-//        let myDevice = UIDevice.current.orientation
-//        if myDevice.isPortrait {
-//            swipeGesture?.direction = .up
-//            UIView.animate(withDuration: 0.5, animations: {
-//                self.gridCentral.transform = CGAffineTransform(translationX: 0, y: -self.screenHeight)
-//            }) { _ in
-//                UIView.animate(withDuration: 2) {
-//                   self.gridCentral.transform = .identity
-//                }
-//            }
-//            //shareSwipeView()
-//            print("Portrait")
-//
-//        } else if myDevice.isLandscape{
-//            swipeGesture?.direction = .left
-//            UIView.animate(withDuration: 0.5, animations: {
-//                self.gridCentral.transform = CGAffineTransform(translationX: -self.screenWidth, y: 0)
-//            }) { _ in
-//                UIView.animate(withDuration: 2) {
-//                   self.gridCentral.transform = .identity
-//                }
-//            }
-//            //shareSwipeView()
-//            print("LandScape")
-//        }
     }
     
-//    func shareSwipeView() {
-//        let activityVC = UIActivityViewController(activityItems: [gridCentral ?? UIView.self], applicationActivities: nil)
-//        activityVC.popoverPresentationController?.sourceView = self.view
-//        self.present(activityVC, animated: true, completion: nil)
-//    }
+    func shareSwipeView() {
+        print(gridCentralView.image)
+        let activityVC = UIActivityViewController(activityItems: [gridCentralView.image], applicationActivities: nil)
+       // activityVC.popoverPresentationController?.sourceView = gridCentral
+        present(activityVC, animated: true, completion: nil)
+        activityVC.completionWithItemsHandler = { _, _, _, _ in
+            UIView.animate(withDuration: 2) {
+                self.gridCentralView.transform = .identity
+            }
+        }
+    } 
     
     
     @IBAction func addPhoto(_ sender: UIButton) {
@@ -117,7 +106,19 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             gridButtons[tag].setImage(image, for: .normal)
+            gridButtons[tag].layoutIfNeeded()
+            gridButtons[tag].subviews.first?.contentMode = .scaleAspectFill
         }
         dismiss(animated: true)
     }
 }
+
+
+
+
+
+
+
+
+
+
