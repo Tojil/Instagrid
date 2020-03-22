@@ -62,7 +62,6 @@
 		1A622B3123E05357005C41CB /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
-				1A622B4D23E0582A005C41CB /* Model */,
 				1A622B4C23E057DD005C41CB /* Controller */,
 				1A622B4B23E057C0005C41CB /* View */,
 				1A622B4A23E05791005C41CB /* Supporting Files */,
@@ -80,7 +79,6 @@
 				1A622B4723E056DA005C41CB /* ThirstySoftRegular.otf */,
 				1A622B3B23E0535B005C41CB /* Assets.xcassets */,
 				1A622B3D23E0535B005C41CB /* LaunchScreen.storyboard */,
-				1A91099B2410F1BC006C3F2D /* UIView+Image.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -88,6 +86,7 @@
 		1A622B4B23E057C0005C41CB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A91099B2410F1BC006C3F2D /* UIView+Image.swift */,
 				1A622B3823E05357005C41CB /* Main.storyboard */,
 			);
 			path = View;
@@ -101,13 +100,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		1A622B4D23E0582A005C41CB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +110,7 @@
 				1A622B2B23E05357005C41CB /* Sources */,
 				1A622B2C23E05357005C41CB /* Frameworks */,
 				1A622B2D23E05357005C41CB /* Resources */,
+				1AAA9B6B2418E97000B66533 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -175,6 +168,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AAA9B6B2418E97000B66533 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A622B2B23E05357005C41CB /* Sources */ = {

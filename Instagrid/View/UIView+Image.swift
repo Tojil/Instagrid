@@ -6,11 +6,12 @@
 //  Copyright © 2020 Sergio Canto . All rights reserved.
 //
 
-
 import UIKit
 
+// with this extension we are able to change View to Image
 extension UIView {
-    var image : UIImage {
+    /// Transform a view to image
+    var image: UIImage {
         let renderer = UIGraphicsImageRenderer(size: bounds.size)
         let image = renderer.image { (_) in
             self.drawHierarchy(in: bounds, afterScreenUpdates: true)
